@@ -23,16 +23,7 @@ export default defineConfig({
             "utils": path.resolve(__dirname, "src/utils"),
             "apis": path.resolve(__dirname, "src/apis"),
         },
-        // {
-        //     "/images": "src/assets/images/"
-        //     //这里不能通过path模块解析路径的写法
-        //     //     <img src="/images/1.png" alt="" />  这里直接引用
-        // }]
     },
-    // 强制预构建插件包
-    // optimizeDeps: {
-    //     include: ['axios'],
-    // },
     define: {
         'process.env': {}
     },
@@ -42,12 +33,6 @@ export default defineConfig({
         outDir: 'dist', //指定输出路径
         assetsDir: 'assets', // 指定生成静态资源的存放路径
         minify: 'terser', // 混淆器，terser构建后文件体积更小
-        // rollupOptions:{
-        //     input:{
-        //         index:path.resolve(__dirname,"index.html"),
-        //         index2:path.resolve(__dirname,"index2.html")
-        //     },
-        // }
     },
     server: {
         cors: true, // 默认启用并允许任何源
@@ -69,7 +54,6 @@ export default defineConfig({
                 changeOrigin: true,
                 rewrite: (path) => path.replace(/^\/admin/, '')
             }
-            // .....
         }
     }
 })
