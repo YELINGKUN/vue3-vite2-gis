@@ -14,6 +14,7 @@ import {appMethods} from '@/common/global/appMethods.js'
 import {globalState} from '@/common/global/globalState.js'
 // import {api} from './api/api.js'
 
+
 const app = createApp(App);
 // 第二步：在app中全局注册方法，其中$func就是调用的方法名
 app.config.globalProperties.$appMethods = appMethods
