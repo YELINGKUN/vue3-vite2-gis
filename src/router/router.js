@@ -55,7 +55,6 @@ const router = createRouter({
 // 守卫模式
 router.beforeEach(function (to, from, next) {
     const uName = "s";
-    debugger
     // const uName = store.getters.getUName
     // 判断当前url是否要求验证
     if (to.matched.some(r => r.meta.requiresAuth)) {
