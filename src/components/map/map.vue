@@ -14,6 +14,6 @@ export default {
 .fill{
   width: 100%;
   height: 100%;
-  background-color: #dac3c3;
+  background-color: #d20c0c;
 }
 </style>
